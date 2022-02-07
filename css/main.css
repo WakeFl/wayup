@@ -1,0 +1,235 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin:  0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+div, span, input, form, p, button, a {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(77,189,254,1);
+    background: -moz-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(77,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(135deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 );
+    padding-top: 60px;
+    padding-bottom: 75px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 37px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    margin-top :150px;
+    line-height: 1.5em;
+}
+
+.title span{
+    font-size: 59px;
+    line-height: 1.2em;
+}
+
+.achive {
+    color: #fff;
+    width: 400px;
+    margin-top: 35px;
+    line-height: 1.7em;
+    margin-bottom: 50px;
+}
+
+.btn {
+    font-family:'Montserrat', sans-se;
+    text-decoration: none;
+    color: #2e2a1b;
+    background: #ffd429;
+    padding: 20px;
+    width: 222px;
+    transition: all .5s;
+  
+}
+
+.btn:hover {
+    background: #d48c00;
+}
+
+.expectations {
+    background: #fff;
+    padding-bottom: 100px;
+    padding-top: 100px;
+} 
+
+.general-title {
+    text-align: center;
+    font-size: 30px;
+    color: #201b2d;
+}
+
+.future {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    text-align: center;
+    color: #201b2d;
+}
+
+.future-title {
+  margin-bottom: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+
+}
+.future-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.future-wish {
+    background: url('../img/icon01.jpg') no-repeat center top;
+    padding-top: 100px;
+}
+
+.future-time {
+    background: url('../img/icon01.jpg') no-repeat center top;
+    width: 289px;
+}
+
+.future-travel {
+    background: url('../img/icon02.jpg') no-repeat center top;
+    width: 289px;
+}
+
+.future-value {
+    background: url('../img/icon03.jpg') no-repeat center top;
+    width: 289px;
+}
+
+.ticket {
+    background: #ecf3f8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.input {
+    display: block;
+    width: 340px;
+    height: 50px;
+    margin: 15px auto;
+    border: 1px solid #bbbbbb ;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+
+.btn-form {
+    width: 340px;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background: #164d7a;
+    padding: 60px 0px;
+}
+
+.credits {
+text-align: center;
+font-size: 14;
+font-weight: 400;
+color: #fff;
+}
+
+@media screen and (max-width: 1200px ) {
+    .container {
+        max-width: 960px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    
+    .wish {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .achive {
+        margin: 40px auto;
+    }
+
+    .travel {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 992px ) {
+    .container {
+        max-width: 720px;
+    }
+
+
+@media screen and (max-width: 768px ) {
+    .container {
+        max-width: 540px;
+    }
+    .future {
+        flex-direction: column;
+    }
+    .future-wish {
+        margin: 0px auto 30px;
+    }
+    .logo {
+        display: block;
+        margin: 0px auto;
+    }
+}
+@media screen and (max-width: 576px ) {
+    .container {
+        max-width: 90%;
+    }
+    .wish {
+        width: 100%;
+    }
+    .achive {
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+    .btn-form{
+        width: 100%;
+    }  
+}
